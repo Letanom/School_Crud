@@ -1,5 +1,6 @@
 # School_Crud
 Kullanım
+
 -Öncelikle, uygulamayı çalıştırmak için bir web sunucusu kurmanız gerekmektedir (örneğin, XAMPP, WAMP, MAMP gibi).
 İlgili web sunucu dizinine dosyaları kopyalayın.
 
