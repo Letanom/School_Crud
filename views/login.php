@@ -23,7 +23,7 @@ if(isset($_POST['login_Button'])){
         $_SESSION['password'] = $password;
         $_SESSION['validate'] = true;
         // Giriş başarılı olduğunda yönlendirme yap
-        header('Location: ../views/home.php');
+        header('Location: ../public/index.html');
         exit(); // İşlemi sonlandır
     } else {
         echo "Giriş Başarısız";

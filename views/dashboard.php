@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../public/styles/student.css"> 
 </head>
 <body>
+
+
     <table>
         <thead>
             <tr>
@@ -15,8 +17,11 @@
                 <th>Öğrenci ID</th>
                 <th>İşlem</th>
             </tr>
+         
+
         </thead>
         <tbody>
+            
             <?php
             // Öğrenci veritabanı sınıfını dahil et
             require_once('../config/student_config.php');
@@ -84,12 +89,17 @@
             ?>
         </tbody>
     </table>
+    <div class="return-button-container">
+        <a href="../public/index.html"><button class="return-button" type="button">Geri Dön</button></a>
+    </div>
+
     <form action="" method="POST">
         <label for="student_name">Ad:</label>
         <input type="text" id="student_name" name="student_name" required><br><br>
         <label for="student_surname">Soyad:</label>
         <input type="text" id="student_surname" name="student_surname" required><br><br>
         <input type="submit" value="Ekle" name="add_Button">
+        
     </form>
     <form action="grade_dashboard.php" method="GET">
         <button class="change_button" type="submit">NOT PANELİNE GEÇ</button>

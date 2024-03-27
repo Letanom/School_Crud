@@ -51,6 +51,8 @@
 
     <!-- Notları Görüntüleme Tablosu -->
     <h2>Notları Görüntüle</h2>
+    
+
     <table>
         <tr>
             <th>ID</th>
@@ -82,11 +84,16 @@
                     </form>
                 </td>
             </tr>
+       
+
         <?php } ?>
     </table>
-
+    <div class="return-button-container">
+        <a href="../public/index.html"><button class="return-button" type="button">Geri Dön</button></a>
+    </div>
     <!-- yeni bilgi ekleme formu -->
     <h2>Yeni Bilgiler</h2>
+    
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label>Öğrenci Numarası:</label>
         <input type="text" name="student_number" required><br>

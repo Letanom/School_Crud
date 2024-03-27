@@ -36,7 +36,7 @@ form {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
-    margin: 20px auto; /* Formu ortalamak için dış margin ekledim */
+    margin: 20px auto; 
 }
 
 form label {
@@ -60,10 +60,36 @@ form input[type="submit"] {
 }
 
 .delete-button {
-    background-color: #f44336; /* Kırmızı renk */
+    background-color: #f44336; 
     color: white;
-    padding: 6px 12px; /* Silme butonunu biraz küçülttüm */
+    padding: 6px 12px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+.return-button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.return-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #45a049; 
+}
+
+.return-button:active {
+    background-color: #3e8e41; 
 }

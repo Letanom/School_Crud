@@ -42,7 +42,7 @@ input[type="number"] {
 }
 
 input[type="submit"] {
-    padding: 8px 12px; /* Düğme boyutunu değiştirdik */
+    padding: 8px 12px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -56,4 +56,29 @@ input[type="submit"]:hover {
 
 input[type="submit"]:last-of-type {
     margin-left: 5px;
+}
+.return-button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.return-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #45a049; }
+
+.return-button:active {
+    background-color: #3e8e41; 
 }
