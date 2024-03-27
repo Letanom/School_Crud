@@ -8,8 +8,7 @@ if(isset($_POST['login_Button'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    // Şifre kontrolü için MD5 kullanılması güvenli değil, ancak burada mevcut uygulamanın mevcut yapısını koruyacağım.
-    // Gerçek bir uygulamada parola kontrolü için daha güçlü bir yöntem (örneğin, bcrypt) kullanılmalıdır.
+
 
     
     $p = Database::connect()->prepare('SELECT * FROM registration WHERE email = :e AND password = :p');
