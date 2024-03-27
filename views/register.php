@@ -10,7 +10,7 @@ if(isset($_POST['register_Button'])){
     // Boş alan kontrolü
     if(!empty($name) && !empty($surname) && !empty($email) && !empty($password)) {
        
-        // SQL injection koruması için PDO kullanarak veritabanına ekle
+        // SQL injection koruması için PDO kullanarak veritabanına 
         $p = Database::connect()->prepare('INSERT INTO registration(name, surname, email, password) VALUES(:n, :s, :e, :p)');
         $p->bindParam(':n', $name);
         $p->bindParam(':s', $surname);
